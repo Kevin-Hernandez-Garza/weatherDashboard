@@ -6,10 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
 
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
     
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="col-12 text-center text-light" id="mainHead">
+                Weather Dashboard
+            </h1>
+        </div>
+
+        <div class="row">
+            <!-- left column -->
+            <div class="col-3">
+                <div class="card mb-3 border-dark">
+                    <h2 class="card-title text-center">
+                        Search for a City 
+                    </h2>
+                    <form class="card-body">
+                        <input type="text" id="city-search" autofocus class="form-input">
+                        <button type="submit" class="btn">Search</button>
+                    </form>
+                </div>
+    
+                <div class="card border-dark">
+                    <h2 class="card-title text-center mb-3">
+                        History
+                    </h2>
+    
+                    <div class="list-group">
+                        <!-- cities searched will go here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- right column -->
+            <div class="col-9">
+                <!-- current weather data -->
+                <div class="row current-weather mb-4" id="current-data">
+                    <h2 id="current-day">
+                        <!-- EXAMPLE BELOW -->
+                        City Name (MM/DD/YYYY) 🌤
+                        <!-- CITY NAME (city date format: (Month/Day/Year)) ICON OF WEATHER CONDITION -->
+                        <span id="date"> <!-- DATE GOES HERE --> </span>
+                    </h2>
+                    
+                    <p id="temp">
+                        Temperature :
+                    </p>
+
+                    <p id="humidity">
+                        Humidity :
+                    </p>
+
+                    <p id="wind">
+                        Wind Speed :
+                    </p>
+
+                    <p id="uv">
+                        UV Index : 
+                    </p>
+                </div>
+
+                <!-- upcoming weather data -->
+                <div class="row" id="next-days">
+                    <!-- MAKE CARDS (day-2, day-3, day-4, day-5, day-6) -->
+                    <div class="col-2 card me-4 border-dark">
+                        <div class="card-body">
+                            <p>
+                                (MM/DD/YYYY) Day #2
+                            </p>
+                            <p>
+                                🌤
+                            </p>
+                            <p>
+                                Temperature :
+                            </p>
+                            <p>
+                                Wind :
+                            </p>
+                            <p>
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-2 card me-4 border-dark">
+                        <div class="card-body">
+                            <p>
+                                (MM/DD/YYYY) Day #3
+                            </p>
+                            <p>
+                                🌤
+                            </p>
+                            <p>
+                                Temperature :
+                            </p>
+                            <p>
+                                Wind :
+                            </p>
+                            <p>
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-2 card me-4 border-dark">
+                        <div class="card-body">
+                            <p>
+                                (MM/DD/YYYY) Day #4
+                            </p>
+                            <p>
+                                🌤
+                            </p>
+                            <p>
+                                Temperature :
+                            </p>
+                            <p>
+                                Wind :
+                            </p>
+                            <p>
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-2 card me-4 border-dark">
+                        <div class="card-body">
+                            <p>
+                                (MM/DD/YYYY) Day #5
+                            </p>
+                            <p>
+                                🌤
+                            </p>
+                            <p>
+                                Temperature :
+                            </p>
+                            <p>
+                                Wind :
+                            </p>
+                            <p>
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-2 card border-dark">
+                        <div class="card-body">
+                            <p>
+                                (MM/DD/YYYY) Day #6
+                            </p>
+                            <p>
+                                🌤
+                            </p>
+                            <p>
+                                Temperature :
+                            </p>
+                            <p>
+                                Wind :
+                            </p>
+                            <p>
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
 
     <script src="./assets/js/script.js"></script>
 </body>
