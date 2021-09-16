@@ -43,10 +43,16 @@ body {
 }
 
 /*  RIGHT COLUMN */
-#next-days {
-  font-size: 10px;
-}
-
 #current-data {
   line-height: 2.5;
+  /* example bg-color OMIT OMIT OMIT AFTER TEST */
+  background-color: #fff;
+}
+
+#current-data p {
+  font-size: 22px;
+}
+
+#next-days {
+  font-size: 14px;
 }
