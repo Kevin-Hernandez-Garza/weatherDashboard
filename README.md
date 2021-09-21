@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![mockup](assets/images/weather-mock.png)
+![mock](assets/images/weather-mock.png)
 
 ## Website
 
