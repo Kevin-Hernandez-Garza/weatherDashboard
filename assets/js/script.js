@@ -7,7 +7,7 @@
 
 var userFormEl = document.querySelector('#user-form');
 var userInput = document.querySelector('#city-search');
-var apiURL = "http://api.openweathermap.org/data/2.5/weather?q=";
+var apiURL = "https://api.openweathermap.org/data/2.5/weather?q=";
 var apiKey = "&units=imperial&appid=cd996b1bf4e8105324a410b704c9079d";
 // var apiURL2 = ;
 
@@ -42,6 +42,10 @@ var submitHandler = function (event) {
     console.log(event);
 }
 
+
+var displayData = function () {
+    
+}
 
 userFormEl.addEventListener('submit', submitHandler);
 // getWeatherData ("salem");
