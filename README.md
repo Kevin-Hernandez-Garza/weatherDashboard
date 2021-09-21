@@ -6,6 +6,8 @@
 
 ## Screenshot
 
+![mockup](assets/images/weather-mock.png)
+
 ## Website
 
 - https://kevin-hernandez-garza.github.io/weatherDashboard/
